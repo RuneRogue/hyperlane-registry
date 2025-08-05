@@ -1,0 +1,14 @@
+blockx:
+  isNft: false
+  owner: "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3"
+  proxyAdmin:
+    address: "0x68eeEFE061f2C2DF1eD01a448965DF48D171a90c"
+    owner: "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3"
+  type: synthetic
+polygon:
+  owner: "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3"
+  proxyAdmin:
+    address: "0x2040925bd5a0504925dc065036a06BbB5696E7b5"
+    owner: "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3"
+  token: "0x5a45e4cf479dedd99940c2e0486dc8038561a875"
+  type: collateral
