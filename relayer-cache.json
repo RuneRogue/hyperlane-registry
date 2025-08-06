@@ -1,0 +1,33 @@
+{
+  "hook": {
+    "polygon": {
+      "0x0AB0d19A8E7A7B6835D1E61402da76c00dF73A4b": {
+        "type": "merkleTreeHook",
+        "address": "0x0AB0d19A8E7A7B6835D1E61402da76c00dF73A4b"
+      }
+    },
+    "blockx": {
+      "0x46EfccC53054716EAB94A0aba927740C061f3c09": {
+        "type": "merkleTreeHook",
+        "address": "0x46EfccC53054716EAB94A0aba927740C061f3c09"
+      }
+    }
+  },
+  "ism": {
+    "blockx": {
+      "0xB473E51b130F203F69f50AB54aF47Df56629EA6A": {
+        "type": "trustedRelayerIsm",
+        "relayer": "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3",
+        "address": "0xB473E51b130F203F69f50AB54aF47Df56629EA6A"
+      }
+    },
+    "polygon": {
+      "0xc4d38595600ec70238a610A93984D18A8B65F60a": {
+        "type": "trustedRelayerIsm",
+        "relayer": "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3",
+        "address": "0xc4d38595600ec70238a610A93984D18A8B65F60a"
+      }
+    }
+  },
+  "backlog": []
+}
