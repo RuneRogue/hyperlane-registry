@@ -19,6 +19,30 @@
         "type": "trustedRelayerIsm",
         "relayer": "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3",
         "address": "0xB473E51b130F203F69f50AB54aF47Df56629EA6A"
+      },
+      "0x1775606EA5B4C1dC92f591Ec3df1A94a2508d960": {
+        "address": "0x1775606EA5B4C1dC92f591Ec3df1A94a2508d960",
+        "type": "staticAggregationIsm",
+        "modules": [
+          {
+            "owner": "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3",
+            "address": "0x7138fb823d8935a2E8FD222CeFfB41b41D6f1902",
+            "type": "defaultFallbackRoutingIsm",
+            "domains": {
+              "polygon": {
+                "address": "0xB473E51b130F203F69f50AB54aF47Df56629EA6A",
+                "relayer": "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3",
+                "type": "trustedRelayerIsm"
+              }
+            }
+          },
+          {
+            "address": "0xa42692Afb8c168eDAb2CD6F823f57A40Ad86985b",
+            "relayer": "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3",
+            "type": "trustedRelayerIsm"
+          }
+        ],
+        "threshold": 1
       }
     },
     "polygon": {
@@ -26,6 +50,30 @@
         "type": "trustedRelayerIsm",
         "relayer": "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3",
         "address": "0xc4d38595600ec70238a610A93984D18A8B65F60a"
+      },
+      "0x38DD57d4f96272CbA1616DA140CDb981a6f34fCE": {
+        "address": "0x38DD57d4f96272CbA1616DA140CDb981a6f34fCE",
+        "type": "staticAggregationIsm",
+        "modules": [
+          {
+            "owner": "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3",
+            "address": "0x8257c73b5112CCf727619cc01034E6e5E8C776E6",
+            "type": "defaultFallbackRoutingIsm",
+            "domains": {
+              "blockx": {
+                "address": "0xc4d38595600ec70238a610A93984D18A8B65F60a",
+                "relayer": "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3",
+                "type": "trustedRelayerIsm"
+              }
+            }
+          },
+          {
+            "address": "0xE4eb8273471353b230573B0D4f07BD72351F90c8",
+            "relayer": "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3",
+            "type": "trustedRelayerIsm"
+          }
+        ],
+        "threshold": 1
       }
     }
   },

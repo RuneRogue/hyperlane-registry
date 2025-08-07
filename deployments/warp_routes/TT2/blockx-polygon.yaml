@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../schema.json
+tokens:
+  - addressOrDenom: "0x1Fc7eAED413845037E94C1Cc7b96833b68BE676a"
+    chainName: blockx
+    connections:
+      - token: ethereum|polygon|0x16Ef5bBF7454e6dc577bE9c299bd19FA5D101823
+    decimals: 18
+    name: Test Token 2
+    standard: EvmHypSynthetic
+    symbol: TT2
+  - addressOrDenom: "0x16Ef5bBF7454e6dc577bE9c299bd19FA5D101823"
+    chainName: polygon
+    collateralAddressOrDenom: "0xa8e284c55140481c4c2803d90f345a6bda00e705"
+    connections:
+      - token: ethereum|blockx|0x1Fc7eAED413845037E94C1Cc7b96833b68BE676a
+    decimals: 18
+    name: Test Token 2
+    standard: EvmHypCollateral
+    symbol: TT2
