@@ -1,29 +1,66 @@
-Create a custom chain config, run:
+# Hyperlane Deployment Guide
 
+## 1. Custom Chain Configuration
+
+Create a custom chain config by running:
+
+```bash
 hyperlane registry init
+```
 
+## 2. Core Contracts Setup
 
-Next, let’s configure, deploy and test your custom chain’s core contracts.
-​
-Initialize configuration
-From your local environment, set the private key or seed phrase of your funded deployer address to HYP_KEY. For example: export HYP_KEY='<YOUR_PRIVATE_KEY>'
-From the same terminal instance, run:
+Next, let's configure, deploy and test your custom chain's core contracts.
 
-hyperlane core init
+### Initialize Configuration
 
-Deploy contracts
-To deploy contracts, run:
+1. From your local environment, set the private key or seed phrase of your funded deployer address to `HYP_KEY`:
+   ```bash
+   export HYP_KEY='<YOUR_PRIVATE_KEY>'
+   ```
 
+2. From the same terminal instance, run:
+   ```bash
+   hyperlane core init
+   ```
+
+### Deploy Core Contracts
+
+To deploy the core contracts, run:
+```bash
 hyperlane core deploy
+```
 
+## 3. Hyperlane Warp Route (HWR) Deployment
 
-HWR deployment config
-The easiest way to create a HWR deployment config file is with the CLI’s config command:
+### Create HWR Deployment Config
 
+The easiest way to create a HWR deployment config file is with the CLI's config command:
+```bash
 hyperlane warp init
+```
 
+### Deploy the HWR
 
-Deploy the HWR
 Once your configuration is ready, initiate the HWR deployment with:
-
+```bash
 hyperlane warp deploy
+```
+
+---
+
+## Quick Reference Commands
+
+| Command | Description |
+|---------|-------------|
+| `hyperlane registry init` | Initialize custom chain configuration |
+| `hyperlane core init` | Initialize core contract configuration |
+| `hyperlane core deploy` | Deploy core contracts |
+| `hyperlane warp init` | Initialize warp route configuration |
+| `hyperlane warp deploy` | Deploy warp routes |
+
+## Prerequisites
+
+- Funded deployer address
+- Private key set in `HYP_KEY` environment variable
+- Node.js and Hyperlane CLI installed
