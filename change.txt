@@ -1,5 +1,0 @@
-defaultIsm:
-  threshold: 1
-  type: messageIdMultisigIsm
-  validators:
-  - "0x427db1577186cfd445f2114b8a4e453b7bdb02b3"

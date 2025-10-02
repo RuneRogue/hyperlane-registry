@@ -1,0 +1,29 @@
+Create a custom chain config, run:
+
+hyperlane registry init
+
+
+Next, let’s configure, deploy and test your custom chain’s core contracts.
+​
+Initialize configuration
+From your local environment, set the private key or seed phrase of your funded deployer address to HYP_KEY. For example: export HYP_KEY='<YOUR_PRIVATE_KEY>'
+From the same terminal instance, run:
+
+hyperlane core init
+
+Deploy contracts
+To deploy contracts, run:
+
+hyperlane core deploy
+
+
+HWR deployment config
+The easiest way to create a HWR deployment config file is with the CLI’s config command:
+
+hyperlane warp init
+
+
+Deploy the HWR
+Once your configuration is ready, initiate the HWR deployment with:
+
+hyperlane warp deploy
