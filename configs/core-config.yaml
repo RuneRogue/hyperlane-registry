@@ -4,7 +4,7 @@ defaultIsm:
   threshold: 1
   type: messageIdMultisigIsm
   validators:
-  - "0x427db1577186cfd445f2114b8a4e453b7bdb02b3"
+  - "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3"
 owner: "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3"
 proxyAdmin:
   owner: "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3"

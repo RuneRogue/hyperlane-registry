@@ -1,18 +1,18 @@
 # yaml-language-server: $schema=../schema.json
 tokens:
-  - addressOrDenom: "0xF927469a6141e2B03bb5879cd8fB163447216D2b"
+  - addressOrDenom: "0xFb6253856a24544E454ab8336Eb90116f0afEB9F"
     chainName: blockx
     connections:
-      - token: ethereum|polygon|0x0b484bF892556d6FA04891A6BD72406B679e83Df
+      - token: ethereum|polygon|0xd16C5C142C351a545223945123259C0981b9d456
     decimals: 6
     name: USD Coin
     standard: EvmHypSynthetic
     symbol: USDC
-  - addressOrDenom: "0x0b484bF892556d6FA04891A6BD72406B679e83Df"
+  - addressOrDenom: "0xd16C5C142C351a545223945123259C0981b9d456"
     chainName: polygon
     collateralAddressOrDenom: "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359"
     connections:
-      - token: ethereum|blockx|0xF927469a6141e2B03bb5879cd8fB163447216D2b
+      - token: ethereum|blockx|0xFb6253856a24544E454ab8336Eb90116f0afEB9F
     decimals: 6
     name: USD Coin
     standard: EvmHypCollateral

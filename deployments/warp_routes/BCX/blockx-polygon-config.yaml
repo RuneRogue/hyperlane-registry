@@ -1,18 +1,18 @@
 # yaml-language-server: $schema=../schema.json
 tokens:
-  - addressOrDenom: "0x30fa74fB086E3536C8f39040cde75Cf2192F78bD"
+  - addressOrDenom: "0xef67eBfbcc8E6A9E6F1dc9bAa7a4900C3194a08A"
     chainName: blockx
     connections:
-      - token: ethereum|polygon|0x2B51fa7CAA44668fa5b4431420414f6693d52032
+      - token: ethereum|polygon|0xb9D75Cd1d6dE1ECc6Cf60731e4643dA58eD918DE
     decimals: 18
     name: BlockX
     standard: EvmHypNative
     symbol: BCX
-  - addressOrDenom: "0x2B51fa7CAA44668fa5b4431420414f6693d52032"
+  - addressOrDenom: "0xb9D75Cd1d6dE1ECc6Cf60731e4643dA58eD918DE"
     chainName: polygon
     collateralAddressOrDenom: "0x871531a59Ef89C5262bCF58a80AB29F9711EA5a7"
     connections:
-      - token: ethereum|blockx|0x30fa74fB086E3536C8f39040cde75Cf2192F78bD
+      - token: ethereum|blockx|0xef67eBfbcc8E6A9E6F1dc9bAa7a4900C3194a08A
     decimals: 18
     name: BlockX
     standard: EvmHypCollateral
