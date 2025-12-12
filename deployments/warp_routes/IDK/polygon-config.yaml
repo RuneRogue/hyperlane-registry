@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../schema.json
+tokens:
+  - addressOrDenom: "0xf3d3acBf9295f43D4626A92414bA319Bd2e42df8"
+    chainName: blockx
+    collateralAddressOrDenom: "0xaCF16D644ec5fA69a52683672133e26BCa91c749"
+    connections:
+      - token: ethereum|polygon|0x14b947b3DFA72100faB39ED75daDFE688a7e5D18
+    decimals: 18
+    name: IDK
+    standard: EvmHypCollateral
+    symbol: IDK
+  - addressOrDenom: "0x14b947b3DFA72100faB39ED75daDFE688a7e5D18"
+    chainName: polygon
+    connections:
+      - token: ethereum|blockx|0xf3d3acBf9295f43D4626A92414bA319Bd2e42df8
+    decimals: 18
+    name: IDK
+    standard: EvmHypSynthetic
+    symbol: IDK

@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=../schema.json
 blockExplorers:
-  - apiKey: GP69JEAP2W7YFJT9ZJTEPGQT6Y6KMW44ZN
+  - apiKey: WYSVIIU44PHHITTPQSAMWIJ5GRSWVTTUSC
     apiUrl: https://api.etherscan.io/v2/api?chainid=137
     family: etherscan
     name: PolygonScan

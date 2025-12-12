@@ -1,0 +1,49 @@
+Hyperlane CLI
+Using warp route deployment config at deployments/warp_routes/USDC/blockx-polygon-bsc-deploy.yaml
+Hyperlane Warp Route Deployment
+_______________________________
+
+Warp Route Deployment Plan
+==========================
+📋 Token Standard: ERC20
+📋 Warp Route Config:
+┌─────────┬───────┬──────────────┬──────────────────────────────────────────────┬──────────────────────────────────────────────┬───────────────────────────────┐
+│ (index) │ NFT?  │ Type         │ Owner                                        │ Mailbox                                      │ ISM Config(s)                 │
+├─────────┼───────┼──────────────┼──────────────────────────────────────────────┼──────────────────────────────────────────────┼───────────────────────────────┤
+│ blockx  │ false │ 'synthetic'  │ '0x427dB1577186cfD445f2114b8a4e453B7bdb02B3' │ '0x94748623b4ab1cEda5cEf1B4267c7BB1e8487237' │ 'No ISM config(s) specified.' │
+│ polygon │ false │ 'collateral' │ '0x427dB1577186cfD445f2114b8a4e453B7bdb02B3' │ '0xA92e23eFa54EE5ab170bd86E6732E6eD1519F633' │ 'No ISM config(s) specified.' │
+│ bsc     │ false │ 'collateral' │ '0x427dB1577186cfD445f2114b8a4e453B7bdb02B3' │ '0xb226122316d4015E5E117E25a6BC97Fe62b52301' │ 'No ISM config(s) specified.' │
+└─────────┴───────┴──────────────┴──────────────────────────────────────────────┴──────────────────────────────────────────────┴───────────────────────────────┘
+Running pre-flight checks for chains...
+✅ BlockX signer is valid
+✅ Polygon signer is valid
+✅ Binance Smart Chain signer is valid
+✅ Chains are valid
+Error: SERVER_ERROR: RPC request failed. Check RPC validity. To override RPC URLs, see: https://docs.hyperlane.xyz/docs/deploy-hyperlane-troubleshooting#override-rpc-urls
+    at HyperlaneSmartProvider.performWithFallback (file:///home/priyank/.nvm/versions/node/v22.17.1/lib/node_modules/@hyperlane-xyz/cli/cli-bundle/index.js:794826:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async retryAsync (file:///home/priyank/.nvm/versions/node/v22.17.1/lib/node_modules/@hyperlane-xyz/cli/cli-bundle/index.js:809217:28) {
+  [cause]: Error: missing response (requestBody="{\"method\":\"eth_gasPrice\",\"params\":[],\"id\":44,\"jsonrpc\":\"2.0\"}", requestMethod="POST", serverError={"code":"ETIMEDOUT"}, url="https://web3.blockxnet.com", code=SERVER_ERROR, version=web/5.8.0)
+      at Logger.makeError (file:///home/priyank/.nvm/versions/node/v22.17.1/lib/node_modules/@hyperlane-xyz/cli/cli-bundle/index.js:320545:21)
+      at Logger.throwError (file:///home/priyank/.nvm/versions/node/v22.17.1/lib/node_modules/@hyperlane-xyz/cli/cli-bundle/index.js:320554:20)
+      at file:///home/priyank/.nvm/versions/node/v22.17.1/lib/node_modules/@hyperlane-xyz/cli/cli-bundle/index.js:329606:36
+      at step (file:///home/priyank/.nvm/versions/node/v22.17.1/lib/node_modules/@hyperlane-xyz/cli/cli-bundle/index.js:329379:23)
+      at Object.throw (file:///home/priyank/.nvm/versions/node/v22.17.1/lib/node_modules/@hyperlane-xyz/cli/cli-bundle/index.js:329360:53)
+      at rejected (file:///home/priyank/.nvm/versions/node/v22.17.1/lib/node_modules/@hyperlane-xyz/cli/cli-bundle/index.js:329352:65)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+    reason: 'missing response',
+    code: 'SERVER_ERROR',
+    requestBody: '{"method":"eth_gasPrice","params":[],"id":44,"jsonrpc":"2.0"}',
+    requestMethod: 'POST',
+    serverError: AggregateError [ETIMEDOUT]: 
+        at internalConnectMultiple (node:net:1134:18)
+        at internalConnectMultiple (node:net:1210:5)
+        at Timeout.internalConnectMultipleTimeout (node:net:1742:5)
+        at listOnTimeout (node:internal/timers:590:11)
+        at process.processTimers (node:internal/timers:523:7) {
+      code: 'ETIMEDOUT',
+      [errors]: [Array]
+    },
+    url: 'https://web3.blockxnet.com'
+  }
+}

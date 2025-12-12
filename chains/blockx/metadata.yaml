@@ -1,9 +1,9 @@
 # yaml-language-server: $schema=../schema.json
 blockExplorers:
-  - apiUrl: https://api.blockxnet.com
+  - apiUrl: https://explorer-evm.blockxnet.com/api
     family: blockscout
-    name: BlockX Explorer
-    url: https://explorer.blockxnet.com
+    name: BlockX Mainnet Explorer
+    url: https://explorer-evm.blockxnet.com
 blocks:
   confirmations: 3
   estimateBlockTime: 1

@@ -64,3 +64,121 @@ hyperlane warp deploy
 - Funded deployer address
 - Private key set in `HYP_KEY` environment variable
 - Node.js and Hyperlane CLI installed
+
+
+platform fee on Polygon will be credited on this contract address : 0xDe321E057DAC87baBbEC290aa2a3F20c56daAE52
+platform fee on blockx will be credited on this contract address : 0x0eD00E72215cd4891621481367231Bbf3Ad7437c
+
+add BCX on polygon on this contract address : 0xb9D75Cd1d6dE1ECc6Cf60731e4643dA58eD918DE
+add BCX on Blockx on this contract address: 0xef67eBfbcc8E6A9E6F1dc9bAa7a4900C3194a08A
+
+
+
+# yaml-language-server: $schema=../schema.json
+tokens:
+  - addressOrDenom: "0xFb6253856a24544E454ab8336Eb90116f0afEB9F"
+    chainName: blockx
+    connections:
+      - token: ethereum|polygon|0xd16C5C142C351a545223945123259C0981b9d456
+    decimals: 6
+    name: USD Coin
+    standard: EvmHypSynthetic
+    symbol: USDC
+  - addressOrDenom: "0xd16C5C142C351a545223945123259C0981b9d456"
+    chainName: polygon
+    collateralAddressOrDenom: "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359"
+    connections:
+      - token: ethereum|blockx|0xFb6253856a24544E454ab8336Eb90116f0afEB9F
+    decimals: 6
+    name: USD Coin
+    standard: EvmHypCollateral
+    symbol: USDC
+
+
+bsc:
+  owner: "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3"
+  proxyAdmin:
+    address: "0xf7BC8f14f5dF63892378d4484357F198dD8fB0b0"
+    owner: "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3"
+  token: "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d"
+  decimals: 18
+  type: collateral
+
+
+
+  ✔ Select a warp route: USDC/blockx
+Hyperlane Warp Apply
+____________________
+Extending Warp Route to bsc
+🚀 All systems ready, captain! Beginning deployment...
+Config Ism is empty, skipping deployment.
+Config Hook is empty, skipping deployment.
+Deploying to bsc from https://bscscan.com/address/0x427dB1577186cfD445f2114b8a4e453B7bdb02B3
+Deploying HypERC20Collateral on bsc with constructor args (0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d, 1, 0xb226122316d4015E5E117E25a6BC97Fe62b52301)...
+Pending https://bscscan.com/tx/0x69671919749b6b7303128255452798b07e91fe8ff3838c5a71390c31371169f8 (waiting 1 blocks for confirmation)
+Pending https://bscscan.com/tx/0x04909bec07d78cc51aa88b8f31abbee805f19af178fa1ffb35fc368111548be4 (waiting 1 blocks for confirmation)
+Deploying TransparentUpgradeableProxy on bsc with constructor args (0x29F04B1FA9ca1e9fd866f67b997076c875ba7330, 0xf7BC8f14f5dF63892378d4484357F198dD8fB0b0, 0xc0c53b8b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000427db1577186cfd445f2114b8a4e453b7bdb02b3)...
+Pending https://bscscan.com/tx/0x02d371c359ecdf9f7436d36137d98545acf3064c8575d438a658319175cad87c (waiting 1 blocks for confirmation)
+Successfully deployed contracts on bsc
+✅ Warp contract deployments complete
+Writing deployment artifacts...
+Skipping adding warp route at github registry (not supported)
+Now adding warp route at filesystem registry at /home/priyank/.hyperlane
+Done adding warp route at filesystem registry
+    tokens:
+      - chainName: blockx
+        standard: EvmHypSynthetic
+        decimals: 6
+        symbol: USDC
+        name: USD Coin
+        addressOrDenom: "0x5d63A5612994251Af6Be47AFE34F7Bd9D04861ce"
+        connections:
+          - token: ethereum|polygon|0xC726d5C214eE33AF9Fe9De0a2D78D5402eBDA299
+          - token: ethereum|bsc|0xC08fD527aD84F454351a82eF22C3c2dF67FCA99D
+      - chainName: polygon
+        standard: EvmHypCollateral
+        decimals: 6
+        symbol: USDC
+        name: USD Coin
+        addressOrDenom: "0xC726d5C214eE33AF9Fe9De0a2D78D5402eBDA299"
+        collateralAddressOrDenom: "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359"
+        connections:
+          - token: ethereum|blockx|0x5d63A5612994251Af6Be47AFE34F7Bd9D04861ce
+          - token: ethereum|bsc|0xC08fD527aD84F454351a82eF22C3c2dF67FCA99D
+      - chainName: bsc
+        standard: EvmHypCollateral
+        decimals: 18
+        symbol: USDC
+        name: USD Coin
+        addressOrDenom: "0xC08fD527aD84F454351a82eF22C3c2dF67FCA99D"
+        collateralAddressOrDenom: "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d"
+        connections:
+          - token: ethereum|blockx|0x5d63A5612994251Af6Be47AFE34F7Bd9D04861ce
+          - token: ethereum|polygon|0xC726d5C214eE33AF9Fe9De0a2D78D5402eBDA299
+    
+Updating deployed Warp Routes
+Comparing target Hook config with current one for polygon chain
+Comparing target Hook config with current one for blockx chain
+Comparing target Hook config with current one for bsc chain
+Enrolling Router 0xC726d5C214eE33AF9Fe9De0a2D78D5402eBDA299 on polygon
+Sent tx 0x873cb57480b96ba50a81b82b6de81d7f68fb27ab2e175aec9bece5f0510451f0
+Pending https://polygonscan.com/tx/0x873cb57480b96ba50a81b82b6de81d7f68fb27ab2e175aec9bece5f0510451f0 (waiting 3 blocks for confirmation)
+Setting destination gas for 0xC726d5C214eE33AF9Fe9De0a2D78D5402eBDA299 on polygon
+Sent tx 0xb9d7355326f91c4bd94b443aa8503bfbcb6e848ea22d025d608673d5641f5425
+Pending https://polygonscan.com/tx/0xb9d7355326f91c4bd94b443aa8503bfbcb6e848ea22d025d608673d5641f5425 (waiting 3 blocks for confirmation)
+Transaction receipts for ethereum chain polygon successfully written to ./generated/transactions/polygon-jsonRpc-1765425350979-receipts.json
+Enrolling Router 0x5d63A5612994251Af6Be47AFE34F7Bd9D04861ce on blockx
+Sent tx 0xc249a101d05186083a2d2ba747ba26040f3a523eb1acc21e9c6670227382817d
+Pending https://explorer-evm.blockxnet.com/tx/0xc249a101d05186083a2d2ba747ba26040f3a523eb1acc21e9c6670227382817d (waiting 3 blocks for confirmation)
+Setting destination gas for 0x5d63A5612994251Af6Be47AFE34F7Bd9D04861ce on blockx
+Sent tx 0x3144389d74c2f98e72fd407929e46badb41730cce2ab26cc877914b70b0a81ad
+Pending https://explorer-evm.blockxnet.com/tx/0x3144389d74c2f98e72fd407929e46badb41730cce2ab26cc877914b70b0a81ad (waiting 3 blocks for confirmation)
+Transaction receipts for ethereum chain blockx successfully written to ./generated/transactions/blockx-jsonRpc-1765425394080-receipts.json
+Enrolling Router 0xC08fD527aD84F454351a82eF22C3c2dF67FCA99D on bsc
+Sent tx 0x9e939862367b2e46d85effd1b6189ea9030450f21ce384c7182474943aa3db96
+Pending https://bscscan.com/tx/0x9e939862367b2e46d85effd1b6189ea9030450f21ce384c7182474943aa3db96 (waiting 1 blocks for confirmation)
+Setting destination gas for 0xC08fD527aD84F454351a82eF22C3c2dF67FCA99D on bsc
+Sent tx 0x835afee9c4aea3f4b4c9a770c5d81616f383afef31a933b5f3e7c1d366793bb1
+Pending https://bscscan.com/tx/0x835afee9c4aea3f4b4c9a770c5d81616f383afef31a933b5f3e7c1d366793bb1 (waiting 1 blocks for confirmation)
+Transaction receipts for ethereum chain bsc successfully written to ./generated/transactions/bsc-jsonRpc-1765425408705-receipts.json
+priyank@pop-os:~/.hyperlane$ 

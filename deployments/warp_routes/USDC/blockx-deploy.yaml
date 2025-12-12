@@ -4,6 +4,8 @@ blockx:
   proxyAdmin:
     address: "0x2998c76f2F9A9bDa3e14938c1ACAa3E9907ECb41"
     owner: "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3"
+  decimals: 6
+  scale: 1000000000000
   type: synthetic
 polygon:
   owner: "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3"
@@ -11,4 +13,18 @@ polygon:
     address: "0x69FEEFF0f79916ad2D85A1eC0054Bfb1EC4a147c"
     owner: "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3"
   token: "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359"
+  name: USD Coin
+  symbol: USDC
+  decimals: 6
+  scale: 1000000000000
+  type: collateral
+bsc:
+  owner: "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3"
+  proxyAdmin:
+    address: "0xf7BC8f14f5dF63892378d4484357F198dD8fB0b0"
+    owner: "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3"
+  token: "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d"
+  name: USD Coin
+  symbol: USDC
+  decimals: 18
   type: collateral
