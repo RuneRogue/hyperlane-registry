@@ -4,11 +4,27 @@ blockx:
   proxyAdmin:
     address: "0x2998c76f2F9A9bDa3e14938c1ACAa3E9907ECb41"
     owner: "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3"
+  decimals: 6
+  scale: 1000000000000
   type: synthetic
 polygon:
   owner: "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3"
   proxyAdmin:
     address: "0x69FEEFF0f79916ad2D85A1eC0054Bfb1EC4a147c"
     owner: "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3"
-  token: "0xc2132D05D31c914a87C6611C10748AEb04B58e8F"
+  token: "0xc2132d05d31c914a87c6611c10748aeb04b58e8f"
+  name: USDT
+  symbol: USDT
+  decimals: 6
+  scale: 1000000000000
+  type: collateral
+bsc:
+  owner: "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3"
+  proxyAdmin:
+    address: "0xf7BC8f14f5dF63892378d4484357F198dD8fB0b0"
+    owner: "0x427dB1577186cfD445f2114b8a4e453B7bdb02B3"
+  token: "0x55d398326f99059ff775485246999027b3197955"
+  name: USDT
+  symbol: USDT
+  decimals: 18
   type: collateral

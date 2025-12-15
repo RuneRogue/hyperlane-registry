@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../schema.json
+tokens:
+  - addressOrDenom: "0xE31979EA671cC69913d53f46f03232a862BbF1FA"
+    chainName: blockx
+    connections:
+      - token: ethereum|bsc|0x73234eDCa16BB09F459DDE9D0601eba23c63030d
+    decimals: 18
+    name: BNB
+    standard: EvmHypSynthetic
+    symbol: BNB
+  - addressOrDenom: "0x73234eDCa16BB09F459DDE9D0601eba23c63030d"
+    chainName: bsc
+    connections:
+      - token: ethereum|blockx|0xE31979EA671cC69913d53f46f03232a862BbF1FA
+    decimals: 18
+    name: BNB
+    standard: EvmHypNative
+    symbol: BNB

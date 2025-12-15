@@ -68,6 +68,9 @@ hyperlane warp deploy
 
 platform fee on Polygon will be credited on this contract address : 0xDe321E057DAC87baBbEC290aa2a3F20c56daAE52
 platform fee on blockx will be credited on this contract address : 0x0eD00E72215cd4891621481367231Bbf3Ad7437c
+platform fee on bsc will be credited on this contract address : 0x362D73ddAD7acf8924F6eA5bae19De6f9631bc8b
+
+
 
 add BCX on polygon on this contract address : 0xb9D75Cd1d6dE1ECc6Cf60731e4643dA58eD918DE
 add BCX on Blockx on this contract address: 0xef67eBfbcc8E6A9E6F1dc9bAa7a4900C3194a08A
@@ -156,29 +159,3 @@ Done adding warp route at filesystem registry
           - token: ethereum|blockx|0x5d63A5612994251Af6Be47AFE34F7Bd9D04861ce
           - token: ethereum|polygon|0xC726d5C214eE33AF9Fe9De0a2D78D5402eBDA299
     
-Updating deployed Warp Routes
-Comparing target Hook config with current one for polygon chain
-Comparing target Hook config with current one for blockx chain
-Comparing target Hook config with current one for bsc chain
-Enrolling Router 0xC726d5C214eE33AF9Fe9De0a2D78D5402eBDA299 on polygon
-Sent tx 0x873cb57480b96ba50a81b82b6de81d7f68fb27ab2e175aec9bece5f0510451f0
-Pending https://polygonscan.com/tx/0x873cb57480b96ba50a81b82b6de81d7f68fb27ab2e175aec9bece5f0510451f0 (waiting 3 blocks for confirmation)
-Setting destination gas for 0xC726d5C214eE33AF9Fe9De0a2D78D5402eBDA299 on polygon
-Sent tx 0xb9d7355326f91c4bd94b443aa8503bfbcb6e848ea22d025d608673d5641f5425
-Pending https://polygonscan.com/tx/0xb9d7355326f91c4bd94b443aa8503bfbcb6e848ea22d025d608673d5641f5425 (waiting 3 blocks for confirmation)
-Transaction receipts for ethereum chain polygon successfully written to ./generated/transactions/polygon-jsonRpc-1765425350979-receipts.json
-Enrolling Router 0x5d63A5612994251Af6Be47AFE34F7Bd9D04861ce on blockx
-Sent tx 0xc249a101d05186083a2d2ba747ba26040f3a523eb1acc21e9c6670227382817d
-Pending https://explorer-evm.blockxnet.com/tx/0xc249a101d05186083a2d2ba747ba26040f3a523eb1acc21e9c6670227382817d (waiting 3 blocks for confirmation)
-Setting destination gas for 0x5d63A5612994251Af6Be47AFE34F7Bd9D04861ce on blockx
-Sent tx 0x3144389d74c2f98e72fd407929e46badb41730cce2ab26cc877914b70b0a81ad
-Pending https://explorer-evm.blockxnet.com/tx/0x3144389d74c2f98e72fd407929e46badb41730cce2ab26cc877914b70b0a81ad (waiting 3 blocks for confirmation)
-Transaction receipts for ethereum chain blockx successfully written to ./generated/transactions/blockx-jsonRpc-1765425394080-receipts.json
-Enrolling Router 0xC08fD527aD84F454351a82eF22C3c2dF67FCA99D on bsc
-Sent tx 0x9e939862367b2e46d85effd1b6189ea9030450f21ce384c7182474943aa3db96
-Pending https://bscscan.com/tx/0x9e939862367b2e46d85effd1b6189ea9030450f21ce384c7182474943aa3db96 (waiting 1 blocks for confirmation)
-Setting destination gas for 0xC08fD527aD84F454351a82eF22C3c2dF67FCA99D on bsc
-Sent tx 0x835afee9c4aea3f4b4c9a770c5d81616f383afef31a933b5f3e7c1d366793bb1
-Pending https://bscscan.com/tx/0x835afee9c4aea3f4b4c9a770c5d81616f383afef31a933b5f3e7c1d366793bb1 (waiting 1 blocks for confirmation)
-Transaction receipts for ethereum chain bsc successfully written to ./generated/transactions/bsc-jsonRpc-1765425408705-receipts.json
-priyank@pop-os:~/.hyperlane$ 

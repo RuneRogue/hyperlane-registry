@@ -1,19 +1,31 @@
 # yaml-language-server: $schema=../schema.json
 tokens:
-  - addressOrDenom: "0x2f174aEac9fAD6e64760882AF4cb1DcB62921A10"
+  - addressOrDenom: "0xA670C3C0Cad4b941A74De4B040A8Fe2dCFf6AD02"
     chainName: blockx
     connections:
-      - token: ethereum|polygon|0xebf73db497e984aD6d0544eA30158E480a9780f5
+      - token: ethereum|bsc|0x8257c73b5112CCf727619cc01034E6e5E8C776E6
+      - token: ethereum|polygon|0x9956A1Fc483b978505bA6233D7A22bEF33AEA968
     decimals: 6
     name: USDT0
     standard: EvmHypSynthetic
     symbol: USDT0
-  - addressOrDenom: "0xebf73db497e984aD6d0544eA30158E480a9780f5"
-    chainName: polygon
-    collateralAddressOrDenom: "0xc2132D05D31c914a87C6611C10748AEb04B58e8F"
+  - addressOrDenom: "0x8257c73b5112CCf727619cc01034E6e5E8C776E6"
+    chainName: bsc
+    collateralAddressOrDenom: "0x55d398326f99059ff775485246999027b3197955"
     connections:
-      - token: ethereum|blockx|0x2f174aEac9fAD6e64760882AF4cb1DcB62921A10
+      - token: ethereum|blockx|0xA670C3C0Cad4b941A74De4B040A8Fe2dCFf6AD02
+      - token: ethereum|polygon|0x9956A1Fc483b978505bA6233D7A22bEF33AEA968
+    decimals: 18
+    name: Tether USD
+    standard: EvmHypCollateral
+    symbol: USDT
+  - addressOrDenom: "0x9956A1Fc483b978505bA6233D7A22bEF33AEA968"
+    chainName: polygon
+    collateralAddressOrDenom: "0xc2132d05d31c914a87c6611c10748aeb04b58e8f"
+    connections:
+      - token: ethereum|blockx|0xA670C3C0Cad4b941A74De4B040A8Fe2dCFf6AD02
+      - token: ethereum|bsc|0x8257c73b5112CCf727619cc01034E6e5E8C776E6
     decimals: 6
     name: USDT0
     standard: EvmHypCollateral
-    symbol: USDT0
+    symbol: USDT
